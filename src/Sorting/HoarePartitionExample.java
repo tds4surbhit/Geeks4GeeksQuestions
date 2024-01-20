@@ -21,6 +21,7 @@ public class HoarePartitionExample {
 		int i = l-1;
 		int j = h+1;
 		int pivot = arr[l];
+
 		
 		while(true) {
 			do {

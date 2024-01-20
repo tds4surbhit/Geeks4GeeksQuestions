@@ -30,7 +30,7 @@ public class QuickSortWithLomutoPartition {
 
     public static void QuickSortWithLomutoPartition(int[] arr, int l, int h){
         if(h>l){
-            int partitionElement = partitionLogic(arr,l,h);
+            int partitionElement = partitionLogic(arr,l,h);// partition element comes at its correct place .
             QuickSortWithLomutoPartition(arr,l,partitionElement-1);
             QuickSortWithLomutoPartition(arr,partitionElement+1,h);
         }
