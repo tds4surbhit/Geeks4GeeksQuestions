@@ -9,7 +9,7 @@ public class LomutoPartition {
 		System.out.println();
 	}
 	
-	public static void lomutopartitionExample(int[] arr) {
+	public static void lomutoPartitionExample(int[] arr) {
 		int l = 0;
 		int h = arr.length-1;
 		int pivot = arr[h];
@@ -33,7 +33,7 @@ public class LomutoPartition {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = {10,80,30,90,40,50,70};
-		lomutopartitionExample(arr);
+		lomutoPartitionExample(arr);
 		printArray(arr);
 		
 		

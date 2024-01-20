@@ -1,6 +1,13 @@
 package Sorting;
 
 public class IntersectionOfTwoSortedArrays {
+
+	public static void printArray(int[] arr) {
+		for(int element: arr) {
+			System.out.print(element + " ");
+		}
+		System.out.println();
+	}
 	
 	public static void intersectionOfTwoSortedArrays(int[] a, int[] b) {
 		int i = 0;
@@ -29,7 +36,6 @@ public class IntersectionOfTwoSortedArrays {
 		System.out.println("Hi");
 		
 		intersectionOfTwoSortedArrays(a,b);
-
 	}
 
 }
