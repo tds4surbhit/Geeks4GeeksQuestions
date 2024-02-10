@@ -25,6 +25,9 @@ public class SortAnArrayWithTwoTypes {
             do{
                 j--;
             } while (arr[j] > 0);
+            if(i >= j){
+                return;
+            }
             swap(arr,i,j);
         }
 
@@ -33,5 +36,6 @@ public class SortAnArrayWithTwoTypes {
     public static void main(String[] args){
         int[] arr = {-12,18,-10,15};
         sortingTheArrays(arr);
+        printArray(arr);
     }
 }
