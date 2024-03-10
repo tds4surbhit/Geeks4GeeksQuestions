@@ -12,9 +12,11 @@ public class SubArrayWithZeroSum {
             if(s.contains(sum)){
                 return true;
             }
-            else {
-                s.add(arr[i]);
+            if(sum == 0) {
+                return true;
+
             }
+            s.add(sum);
         }
         return false;
     }
