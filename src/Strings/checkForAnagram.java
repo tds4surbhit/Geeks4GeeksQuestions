@@ -18,8 +18,30 @@ public class checkForAnagram {
                 return false;
             }
         }
+        // hi
+
         return  true;
     }
+
+    public static boolean checkForAnagram2(String str1, String str2){
+        if(str1.length() != str2.length()) return false;
+        int[] tempArray = new int[26];
+
+        for(int i = 0 ; i < str1.length(); i++){
+            tempArray[str1.charAt(i) - 'a']++;
+            tempArray[str2.charAt(i) - 'a']--;
+        }
+
+        for(int i = 0 ; i < tempArray.length ; i++){
+            if(tempArray[i] != 0){
+                return false;
+            }
+        }
+        // hi
+
+        return  true;
+    }
+
 
     pulblic static void main(String[] args){
         String str1 = "aabca";
