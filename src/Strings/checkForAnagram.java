@@ -18,7 +18,6 @@ public class checkForAnagram {
                 return false;
             }
         }
-        // hi
 
         return  true;
     }
@@ -37,7 +36,7 @@ public class checkForAnagram {
                 return false;
             }
         }
-        // hi
+
 
         return  true;
     }
