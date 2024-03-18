@@ -42,7 +42,7 @@ public class checkForAnagram {
     }
 
 
-    pulblic static void main(String[] args){
+    public static void main(String[] args){
         String str1 = "aabca";
         String str2 = "acaba";
         Boolean ans = checkForAnagram(str1,str2);
