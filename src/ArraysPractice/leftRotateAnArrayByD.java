@@ -31,7 +31,8 @@ public class leftRotateAnArrayByD {
 		// TODO Auto-generated method stub
 		System.out.println("The Initial Array is:");
 		int d = 2;
-		int myArray[] = {2,3,4,5,6};
+		int[] myArray = {2,3,4,5,6};
+		int[] myArray1 = {4,5,6,8,9};
 		printArray(myArray);
 		
 		int[] newRotatedArray = leftRotateArrayByTwo(myArray,d);
