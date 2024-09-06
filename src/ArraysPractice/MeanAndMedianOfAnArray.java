@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MeanAndMedianOfAnArray {
 
-    public int mean(int[] arr){
+    public static int mean(int[] arr){
         Arrays.sort(arr);
         int N = arr.length;
 
@@ -12,15 +12,25 @@ public class MeanAndMedianOfAnArray {
         for (int each : arr){
            sum = sum + each;
         }
-        return  integer(sum/N);
+        return (int) (sum/N);
     }
 
-    public int median(int[] arr){
-
+    public static int median(int[] arr){
+        if(arr.length % 2 != 0){
+            return  arr[arr.length/2];
+        } else {
+            int middleElement = arr.length/2;
+            int previousElement = middleElement-1;
+            return arr[(int) (middleElement + previousElement)/ 2];
+        }
     }
 
     public static void main(String[] args){
-        int[] arr = {1,2,19,28,5};
-        mean(arr);
+        int[] arr = {1, 1, 1, 1, 1, 1};
+        int meanValueOfArray = mean(arr);
+        System.out.println(meanValueOfArray);
+
+        int medianValue = median(arr);
+        System.out.println(medianValue);
     }
 }
